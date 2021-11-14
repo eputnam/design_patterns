@@ -1,19 +1,13 @@
 package com.putnam.builder.bike;
 
+import com.putnam.builder.bike.builders.BikeBuilder;
+
 public class BikeDirector {
-  BikeBuilder builder;
+  BikeDirector() {}
 
-  BikeDirector(BikeBuilder bikeBuilder) {
-    this.builder = bikeBuilder;
-  }
-
-  void buildBike(){
-    this.builder.setWheelSize();
-    this.builder.setRearHubType();
-    this.builder.setShifters();
-  }
-
-  BikeBuilder getBuilder() {
-    return this.builder;
+  void buildBike(BikeBuilder builder) {
+    builder.setWheelSize();
+    builder.setRearHubType();
+    builder.setShifters();
   }
 }
