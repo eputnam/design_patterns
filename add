@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Script for adding a new dir for a new language or pattern
+# Usage:
+#    To add a directory ./observer/python:
+#
+#   ./add python observer
+#
+
+pattern=$(echo $2 | awk '{print tolower($0)}')
+language=$(echo $1 | awk '{print tolower($0)}')
+
+GREEN='\033[1;32m'
+WHITE='\033[1;37m'
+NC='\033[0m'
+
+if [[ -z $pattern || -z $language ]]; then
+  echo -e "Did nothing. Please provide a ${WHITE}language${NC} and a ${GREEN}pattern name${NC}, e.g."
+  echo ""
+  echo -e "    $./add ${WHITE}python${NC} ${GREEN}observer${NC}"
+  echo ""
+  exit 1
+fi
+
+if [ ! -d $pattern ]; then
+  mkdir $pattern
+  echo -e "Added new pattern: $GREEN$pattern$NC"
+fi
+
+if [ ! -d $pattern/$language ]; then
+  mkdir $pattern/$language
+  echo -e "Added dir for $WHITE$language$NC implementation of $GREEN$pattern$NC pattern."
+else
+  echo -e "$WHITE$language$NC dir for $GREEN$pattern$NC pattern already exists. You're good to go!"
+fi

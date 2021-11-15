@@ -1,5 +1,14 @@
 # README.md
 
+## Overview 
+Hello! I'm learning about design patterns!
+
+## Adding new stuff
+Check out ./add to create a space for a new pattern and/or language.
+```shell
+./add python observer
+```
+
 ## Code
 
 ### builder
