@@ -2,8 +2,8 @@ package com.putnam.abstractfactory.forks;
 
 public class ModernFork implements Fork{
   @Override
-  public void create() {
-    System.out.println("Created a modern fork!");
+  public void printKind() {
+    System.out.println("A modern fork!");
   }
 
   @Override

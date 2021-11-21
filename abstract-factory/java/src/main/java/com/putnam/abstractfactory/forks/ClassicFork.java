@@ -4,8 +4,8 @@ import com.putnam.abstractfactory.forks.Fork;
 
 public class ClassicFork implements Fork {
   @Override
-  public void create() {
-    System.out.println("Created a classic fork!");
+  public void printKind() {
+    System.out.println("A classic fork!");
   }
 
   @Override

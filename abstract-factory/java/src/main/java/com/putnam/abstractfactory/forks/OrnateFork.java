@@ -2,8 +2,8 @@ package com.putnam.abstractfactory.forks;
 
 public class OrnateFork implements Fork {
   @Override
-  public void create() {
-    System.out.println("Created an ornate fork!");
+  public void printKind() {
+    System.out.println("An ornate fork!");
   }
 
   @Override

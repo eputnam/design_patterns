@@ -1,6 +1,6 @@
 package com.putnam.abstractfactory.forks;
 
 public interface Fork {
-  void create();
+  void printKind();
   int getNumberOfTines();
 }

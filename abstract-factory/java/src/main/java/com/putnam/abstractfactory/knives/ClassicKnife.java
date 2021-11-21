@@ -2,8 +2,8 @@ package com.putnam.abstractfactory.knives;
 
 public class ClassicKnife implements Knife{
   @Override
-  public void create() {
-    System.out.println("Created a classic knife!");
+  public void printKind() {
+    System.out.println("A classic knife!");
   }
 
   @Override

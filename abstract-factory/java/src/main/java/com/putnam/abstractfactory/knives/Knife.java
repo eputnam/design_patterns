@@ -1,6 +1,6 @@
 package com.putnam.abstractfactory.knives;
 
 public interface Knife {
-  void create();
+  void printKind();
   boolean hasBlade();
 }

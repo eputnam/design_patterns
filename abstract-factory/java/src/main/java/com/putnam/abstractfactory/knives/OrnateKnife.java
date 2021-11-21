@@ -2,8 +2,8 @@ package com.putnam.abstractfactory.knives;
 
 public class OrnateKnife implements Knife{
   @Override
-  public void create() {
-    System.out.println("Created an ornate knife!");
+  public void printKind() {
+    System.out.println("An ornate knife!");
   }
 
   @Override
