@@ -17,6 +17,7 @@ Check out ./add to create a space for a new pattern and/or language.
 - [java](builder/java)
 #### abstract factory
 - [java](abstract-factory/java)
+- [ts](abstract-factory/ts)
 
 ## Cool resources
 
