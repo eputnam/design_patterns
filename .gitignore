@@ -1,3 +1,7 @@
+#java
 */java/out/**
 */java/*.iml
+
+#js
 */ts/**/*.js
+*/ts/node_modules/**
