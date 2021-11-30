@@ -30,6 +30,13 @@ fi
 if [ ! -d $pattern/$language ]; then
   mkdir $pattern/$language
   echo -e "Added dir for $WHITE$language$NC implementation of $GREEN$pattern$NC pattern."
+  echo -e "Created README for $WHITE$language$NC implementation..."
+  echo "# ${pattern} in ${language}" >> $pattern/$language/README.md
+  if [[ $language =~ [Jj]ava ]]; then
+    mkdir -p $pattern/$language/src/main/java/com/putnam/$pattern
+    echo "Created $pattern/$language/src/main/java/com/putnam/$pattern"
+  fi
 else
   echo -e "$WHITE$language$NC dir for $GREEN$pattern$NC pattern already exists. You're good to go!"
 fi
+
